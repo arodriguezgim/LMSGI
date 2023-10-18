@@ -1,0 +1,40 @@
+/* Aquí solo escribiremos código CSS */
+body {   
+    background-color: white;
+    color: black;
+}
+nav {
+    background-color: aquamarine;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    padding: 15px;
+}
+
+li:hover {
+    color: white !important;
+    background-color: blue;
+}
+
+
+.caja1 {
+    background-color: aquamarine;
+    padding: 25px;
+    border: 1px solid black;
+}
+.caja2 {
+
+    background-color: pink;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
