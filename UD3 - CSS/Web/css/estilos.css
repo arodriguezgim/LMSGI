@@ -38,3 +38,8 @@ li:hover {
     display: flex;
     flex-direction: row;
 }
+.cajaflex {
+    background-color: pink;
+    padding: 20px;
+    border: 2px solid black;
+}
