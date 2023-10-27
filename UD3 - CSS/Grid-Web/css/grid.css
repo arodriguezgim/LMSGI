@@ -1,0 +1,9 @@
+
+.contenedor div {
+    background-color: azure;
+    padding: 1em;
+}
+
+.contenedor div:hover{
+    border: 1px solid blue;
+}
