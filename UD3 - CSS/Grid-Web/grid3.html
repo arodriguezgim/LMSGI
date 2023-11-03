@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID 3</title>
+    <link rel="stylesheet" href="./css/grid.css">
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+            grid-auto-rows: minmax(100px, auto);
+            /*justify-items: stretch;
+            align-items: stretch;*/
+        }
+        .element1{
+            align-self: start;
+        }
+        .element2{
+            align-self: center;
+        }
+        .element3{
+            align-self: end;
+        }
+        .element4 {
+            justify-self: start;
+        }
+        .element5 {
+            justify-self: center;
+        }
+        .element6 {
+            justify-self: end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="element1">Elemento1</div>
+        <div class="element2">Elemento2</div>
+        <div class="element3">Elemento3</div>
+        <div class="element4">Elemento4</div>
+        <div class="element5">Elemento5</div>
+        <div class="element6">Elemento6</div>
+    </div>   
+</body>
+</html>

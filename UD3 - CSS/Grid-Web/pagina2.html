@@ -8,22 +8,43 @@
     <style>
         .contenedor {
             display: grid;
-            grid-template-columns: 1fr 2fr 1fr 1fr;
+            grid-template-columns: repeat(4 , 1fr);
+            gap: 1em;     
+            grid-template-rows: minmax(20px, auto);   
+        }
+        .nested-contenedor{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: 100px;
+            gap: 1em;
+        }
+        .nested-contenedor > div {
+            border: 1px solid black;
+            background-color: #F1C40F;
+            padding: 1em;
         }
     </style>
 </head>
 <body>
     <div class="contenedor">
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum fugit voluptate eligendi aliquam officiis saepe temporibus repellendus maxime dolores.</div>
-        <div>Obcaecati maiores modi mollitia minus debitis eaque vel fuga exercitationem, minima, incidunt quibusdam. Totam nam quasi veritatis nihil accusantium blanditiis.</div>
+        <div>
+            Hola DAM1
+        </div>
+        <div class="nested-contenedor">
+            <div>Hola DAM 1</div>
+            <div>Hola DAM 1</div>
+            <div>Hola DAM 1</div>
+            <div>Hola DAM 1</div>
+            <div>Hola DAM 1</div>
+            <div>Hola DAM 1</div>
+        </div>
         <div>Quae natus dolorum at eligendi repellat repudiandae expedita voluptatum harum et quis, laborum tempora temporibus accusantium voluptatem incidunt neque ea?</div>
         <div>Temporibus, repudiandae odit quod libero reprehenderit non sapiente, quis quia deserunt nemo sequi voluptas odio distinctio totam nam, dolor quisquam!</div>
         <div>Consectetur pariatur, quae accusamus doloribus asperiores dolores esse non laudantium animi unde at, nulla nam a dolore quam cumque quas.</div>
         <div>Ducimus harum, est animi doloribus possimus corporis minima, adipisci repellat veniam impedit nobis debitis rem tenetur ad aliquam blanditiis quod!</div>
         <div>Quis magnam totam pariatur rerum tempore expedita eum amet, accusantium non recusandae perspiciatis necessitatibus corporis, molestiae, esse sequi? Incidunt, quam.</div>
         <div>Natus maxime voluptas vitae corrupti laborum consequuntur ipsam corporis fugiat commodi, blanditiis assumenda sed ipsa, ex dolores dicta, incidunt necessitatibus?</div>
-        <div>Libero pariatur accusamus iste cum a culpa molestiae sit reiciendis deserunt. Provident accusamus nisi aliquam obcaecati sapiente at, totam eaque.</div>
-        <div>Et cupiditate dolor ipsa alias, explicabo quia itaque repellat sequi corporis magni, adipisci soluta quam iste, minima atque accusantium harum.</div>
+
     </div>   
 </body>
 </html>
