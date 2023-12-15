@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv>
+    <nombre>Alberto Rodriguez</nombre>
+    <anio_ncto>1981</anio_ncto>
+    <residencia>
+        <ciudad>Teruel</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <contacto>
+        <telefono>654321987</telefono>
+        <email>arodriguezg@iesch.org</email>
+        <linkedIn>http://www.alberto.es</linkedIn>
+    </contacto>
+    <descripcion>Interesado en Lenguajes de Marcas.</descripcion>
+    <competencias>
+        <competencia nombre="Diseño" nivel="Medio" />
+        <competencia nombre="Trabajo en equipo" nivel="Alto" />
+        <competencia nombre="Música" nivel="Bajo" />
+    </competencias>
+    <formacion>
+        <titulacion nombre="SMR" centro="IESCH" anio="2000" />
+        <titulacion nombre="DAM" centro="IESCH" anio="2003" />
+    </formacion>
+    <experiencia-profesional>
+        <experiencia>
+            <puesto>Diseñador de Videojuegos</puesto>
+            <empresa>SEGA</empresa>
+            <inicio>1999</inicio>
+            <fin>2012</fin>
+        </experiencia>
+    </experiencia-profesional>
+</cv>
