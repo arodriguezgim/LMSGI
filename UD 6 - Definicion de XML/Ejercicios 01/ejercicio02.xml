@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viaje_turistico>
+    <clientes>
+        <nombre>Alberto</nombre>
+        <apellidos>Rodriguez Gimenez</apellidos>
+    </clientes>
+    <fecha_inicio>20-12-2023</fecha_inicio>
+    <fecha_fin>25-12-2023</fecha_fin>
+    <origen>Madrid</origen>
+    <destinos>
+        <destino>
+            <ciudad>Cancún</ciudad>
+            <hotel>Coco Bongo Hotel</hotel>
+            <noches>3</noches>
+        </destino>
+        <destino>
+            <ciudad>Madagascar</ciudad>
+            <hotel>Tazmania Hotel</hotel>
+            <noches>5</noches>
+        </destino>
+        <destino>
+            <ciudad>Caracas</ciudad>
+            <hotel>Maduro Hotel</hotel>
+            <noches>2</noches>
+        </destino>
+    </destinos>
+    <precio>3500</precio>
+</viaje_turistico>

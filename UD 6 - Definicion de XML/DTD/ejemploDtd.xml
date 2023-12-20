@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda_telefonica [
+    <!ELEMENT agenda_telefonica (contacto+)>
+    <!ELEMENT contacto (nombre, apellido, direccion, telefonos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefonos (casa?, movil?, trabajo?)>
+    <!ELEMENT casa (#PCDATA)>
+    <!ELEMENT movil (#PCDATA)>
+    <!ELEMENT trabajo (#PCDATA)>
+]>
+
+
+<agenda_telefonica>
+    <contacto>
+        <nombre>Alberto</nombre>
+        <apellido>Rodriguez</apellido>
+        <direccion>C Pablo Monguió</direccion>
+        <telefonos>
+            <casa>98765567</casa>
+            <movil>76353543456</movil>
+            <trabajo>736345465</trabajo>
+        </telefonos>
+    </contacto>
+    <contacto>
+        <nombre>Pablo</nombre>
+        <apellido>Dormilon</apellido>
+        <direccion>C Pablo Monguió sn</direccion>
+        <telefonos>           
+            <movil>76353543456</movil>       
+        </telefonos>
+    </contacto>
+</agenda_telefonica>

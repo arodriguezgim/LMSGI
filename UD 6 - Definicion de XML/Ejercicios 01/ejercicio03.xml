@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<escuela>
+    <estudiante>
+        <nombre>Pablo Silvestre</nombre>
+        <edad>18</edad>
+        <grado>Superior</grado>
+        <materias>
+            <materia>
+                <nombre>Lenguaje de marcas</nombre>
+                <calificacion>6</calificacion>
+            </materia>
+            <materia>
+                <nombre>Programación</nombre>
+                <calificacion>4</calificacion>
+            </materia>
+        </materias>
+    </estudiante>
+    <estudiante>
+        <nombre>Pablo Redolar</nombre>
+        <edad>17</edad>
+        <grado>Superior</grado>
+        <materias>
+            <materia>
+                <nombre>Lenguaje de marcas</nombre>
+                <calificacion>7</calificacion>
+            </materia>
+            <materia>
+                <nombre>Programación</nombre>
+                <calificacion>5</calificacion>
+            </materia>
+            <materia>
+                <nombre>Bases de datos</nombre>
+                <calificacion>6</calificacion>
+            </materia>
+        </materias>
+    </estudiante>
+</escuela>

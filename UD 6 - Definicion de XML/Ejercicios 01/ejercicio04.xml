@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libro>
+        <titulo>El codigo Da Vinci</titulo>
+        <autor>Dan Brown</autor>
+        <publicacion>2003</publicacion>
+        <genero>Thriller</genero>
+    </libro>
+    <libro>
+        <titulo>Redes de computadoras</titulo>
+        <autor>Andres J. Thanenbaun</autor>
+        <publicacion>2001</publicacion>
+        <genero>Informatica</genero>
+    </libro>
+</libreria>
