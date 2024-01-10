@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titulo, autor, publicacion)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT publicacion (#PCDATA)>
+]>
+<biblioteca>
+    <libro>
+        <titulo>El Señor de los anillos</titulo>
+        <autor>J.R.R. Tolken</autor>
+        <publicacion>1954</publicacion>
+    </libro>
+    <libro>
+        <titulo>Los Pilares de La Tierra</titulo>
+        <autor>Dan Brown</autor>
+        <publicacion>2005</publicacion>
+    </libro>
+    <libro>
+        <titulo>Mortadelo y Filemon</titulo>
+        <autor>Ibañez</autor>
+        <publicacion>1954</publicacion>
+    </libro>
+    <libro>
+        <titulo>Kamasutra</titulo>
+        <autor>Jordi ENP</autor>
+        <publicacion>2010</publicacion>
+    </libro>
+</biblioteca>
