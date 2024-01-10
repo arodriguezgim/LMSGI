@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo [
+    <!ELEMENT catalogo (producto+)>
+    <!ELEMENT producto (nombre, descripcion?)>
+    <!ATTLIST producto codigo CDATA #IMPLIED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+]>
+<catalogo>
+    <!--El catalogo lleva uno o más elementos producto-->
+    <producto> <!--Producto puede tener un atributo codigo-->
+        <nombre>Caja con autocierre</nombre>
+        <!--La descripción es optativa-->
+        <descripcion>Caja de seguridad...</descripcion>
+    </producto>
+    <producto codigo="jjjjj">
+        <nombre>Caja llaves</nombre>
+    </producto>
+</catalogo>

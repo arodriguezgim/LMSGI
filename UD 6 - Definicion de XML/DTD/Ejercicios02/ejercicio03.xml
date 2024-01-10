@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE estudiantes [
+    <!ELEMENT estudiantes (estudiante+)>
+    <!ELEMENT estudiante (nombre, edad, calificaciones)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT calificaciones (materia+)>
+    <!ELEMENT materia (nombre_materia, calificacion)>
+    <!ELEMENT nombre_materia (#PCDATA)>
+    <!ELEMENT calificacion (#PCDATA)>
+]>
+<estudiantes>
+    <estudiante>
+        <nombre>Pablo Silvestre</nombre>
+        <edad>20</edad>
+        <calificaciones>
+            <materia>
+                <nombre_materia>Programacion</nombre_materia>
+                <calificacion>Aprobado</calificacion>
+            </materia>
+            <materia>
+                <nombre_materia>BBDD</nombre_materia>
+                <calificacion>Suspenso</calificacion>
+            </materia>
+            <materia>
+                <nombre_materia>LMSGI</nombre_materia>
+                <calificacion>Aprobado</calificacion>
+            </materia>
+        </calificaciones>
+    </estudiante>
+    <estudiante>
+        <nombre>Pablo Silvestre</nombre>
+        <edad>20</edad>
+        <calificaciones>
+            <materia>
+                <nombre_materia>Programacion</nombre_materia>
+                <calificacion>Aprobado</calificacion>
+            </materia>
+            <materia>
+                <nombre_materia>BBDD</nombre_materia>
+                <calificacion>Suspenso</calificacion>
+            </materia>
+            <materia>
+                <nombre_materia>LMSGI</nombre_materia>
+                <calificacion>Aprobado</calificacion>
+            </materia>
+        </calificaciones>
+    </estudiante>
+    <estudiante>
+        <nombre>Pablo Silvestre</nombre>
+        <edad>20</edad>
+        <calificaciones>
+            <materia>
+                <nombre_materia>Programacion</nombre_materia>
+                <calificacion>Aprobado</calificacion>
+            </materia>
+            <materia>
+                <nombre_materia>BBDD</nombre_materia>
+                <calificacion>Suspenso</calificacion>
+            </materia>
+            <materia>
+                <nombre_materia>LMSGI</nombre_materia>
+                <calificacion>Aprobado</calificacion>
+            </materia>
+        </calificaciones>
+    </estudiante>
+    <estudiante>
+        <nombre>Pablo Silvestre</nombre>
+        <edad>20</edad>
+        <calificaciones>
+            <materia>
+                <nombre_materia>Programacion</nombre_materia>
+                <calificacion>Aprobado</calificacion>
+            </materia>
+            <materia>
+                <nombre_materia>BBDD</nombre_materia>
+                <calificacion>Suspenso</calificacion>
+            </materia>
+            <materia>
+                <nombre_materia>LMSGI</nombre_materia>
+                <calificacion>Aprobado</calificacion>
+            </materia>
+        </calificaciones>
+    </estudiante>
+    
+</estudiantes>

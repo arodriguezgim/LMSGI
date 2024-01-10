@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tienda_online [
+    <!ELEMENT tienda_online (cliente+)>
+    <!ELEMENT cliente (nombre, direccion, orden)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT orden (producto+)>
+    <!ELEMENT producto (nombre_producto, cantidad, precio)>
+    <!ELEMENT nombre_producto (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+]>
+<tienda_online>
+    <cliente>
+        <nombre>Juan Pérez</nombre>
+        <direccion>Av Principal</direccion>
+        <orden>
+            <producto>
+                <nombre_producto>Portatil HP</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio>650</precio>
+            </producto>
+            <producto>
+                <nombre_producto>Impresora</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio>65</precio>
+            </producto>
+            <producto>
+                <nombre_producto>Raton</nombre_producto>
+                <cantidad>5</cantidad>
+                <precio>50</precio>
+            </producto>
+        </orden>
+    </cliente>
+
+    <cliente>
+        <nombre>Juan Pérez</nombre>
+        <direccion>Av Principal</direccion>
+        <orden>
+            <producto>
+                <nombre_producto>Portatil HP</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio>650</precio>
+            </producto>
+            
+            
+        </orden>
+    </cliente>
+
+    <cliente>
+        <nombre>Juan Pérez</nombre>
+        <direccion>Av Principal</direccion>
+        <orden>
+            <producto>
+                <nombre_producto>Portatil HP</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio>650</precio>
+            </producto>
+            <producto>
+                <nombre_producto>Impresora</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio>65</precio>
+            </producto>
+            <producto>
+                <nombre_producto>Raton</nombre_producto>
+                <cantidad>5</cantidad>
+                <precio>50</precio>
+            </producto>
+            <producto>
+                <nombre_producto>Portatil HP</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio>650</precio>
+            </producto>
+            <producto>
+                <nombre_producto>Impresora</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio>65</precio>
+            </producto>
+            <producto>
+                <nombre_producto>Raton</nombre_producto>
+                <cantidad>5</cantidad>
+                <precio>50</precio>
+            </producto>
+        </orden>
+    </cliente>
+</tienda_online>
