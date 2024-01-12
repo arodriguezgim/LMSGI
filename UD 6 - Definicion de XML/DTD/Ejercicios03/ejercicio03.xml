@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedido [
+    <!ELEMENT pedido (tractor+)>
+    <!ELEMENT tractor (componente+)>
+    <!ELEMENT componente ( fechaentrega?, (fragil | nofragil), peso, numserie, kmmaximos?)>
+    <!ATTLIST componente nombrefabricante CDATA #REQUIRED>
+    <!ELEMENT fechaentrega ( dia?, mes, anio )>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT fragil EMPTY >
+    <!ELEMENT nofragil EMPTY >
+    <!ELEMENT peso (#PCDATA)>
+    <!ATTLIST peso unidad CDATA #REQUIRED>
+    <!ELEMENT numserie (#PCDATA)>
+    <!ELEMENT kmmaximos (#PCDATA)>
+]>
+
+<pedido>
+    <tractor>
+        <componente nombrefabricante="Ebro">
+            <fechaentrega>
+                <mes>2018</mes> <anio>2018</anio>
+            </fechaentrega>
+            <fragil/>
+            <peso unidad="kg">12</peso>
+            <numserie>00A</numserie>
+        </componente>
+        <componente nombrefabricante="Avia">
+            <fechaentrega>
+                <dia>12</dia><mes>1</mes><anio>2019</anio>
+            </fechaentrega>
+            <nofragil/>
+            <peso unidad="g">1450</peso>
+            <numserie>00D</numserie>
+            <kmmaximos>25000</kmmaximos>
+        </componente>
+    </tractor>
+    <tractor>
+        <componente nombrefabricante="John Deere">
+            <fragil/>
+            <peso unidad="g">770</peso>
+            <numserie>43Z</numserie>
+        </componente>
+    </tractor>
+</pedido>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listafacturas [
+    <!ELEMENT listafacturas (factura+)>
+    <!ELEMENT factura ( emisor, pagador, importe )>
+    <!ATTLIST factura fecha CDATA #IMPLIED>
+    <!ELEMENT emisor ( nombre, volumenventas? )>
+    <!ATTLIST emisor cif CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT volumenventas (#PCDATA)>
+    <!ELEMENT pagador ( nombre, volumenventas? )>
+    <!ATTLIST pagador cif CDATA #REQUIRED>
+    <!ELEMENT importe (#PCDATA)>
+]>
