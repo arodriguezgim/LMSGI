@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pizzas [
+   <!ELEMENT pizzas (ingredientes, tipos)>
+   <!ELEMENT ingredientes (ingrediente)*>
+      <!ELEMENT ingrediente (#PCDATA)>
+         <!ATTLIST ingrediente coding ID #REQUIRED>
+   <!ELEMENT tipos (tipo)*>
+      <!ELEMENT tipo EMPTY>
+         <!ATTLIST tipo nombre CDATA #REQUIRED>
+         <!ATTLIST tipo ingredientes IDREFS #REQUIRED>
+]>
+
+<pizzas>
+   <ingredientes>
+      <ingrediente coding="HUE">Huevo</ingrediente>
+      <ingrediente coding="CHA">Champiñón</ingrediente>
+      <ingrediente coding="CHO">Chorizo</ingrediente>
+      <ingrediente coding="CAL">Calabacín</ingrediente>
+      <ingrediente coding="JAM">Jamón de York</ingrediente>
+   </ingredientes>
+   <tipos>
+      <tipo nombre="Fantástica" ingredientes="CAL, CHA, ZAN"/>
+      <tipo nombre="Sabrosa" ingredientes="CHA, CHO, JAM, HUE"/>
+   </tipos>
+</pizzas>

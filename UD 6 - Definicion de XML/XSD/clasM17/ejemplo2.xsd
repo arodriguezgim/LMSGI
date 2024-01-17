@@ -1,0 +1,9 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="edad" type="tipoEdad"/> 
+    <xs:simpleType name="tipoEdad">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="16"/>
+            <xs:maxExclusive value="65"/>
+        </xs:restriction>
+    </xs:simpleType>       
+</xs:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listado [
+    <!ELEMENT listado (futuro+, divisa+, bono+, letra+ )>
+    <!ELEMENT futuro ( producto, mercado?, ciudad_procedencia )>
+    <!ATTLIST futuro precio CDATA #REQUIRED>
+    <!ELEMENT producto (#PCDATA)>
+    <!ELEMENT mercado (#PCDATA)>    
+    <!ELEMENT ciudad_procedencia ( frankfurt | madrid | tokio | nyork )>
+    <!ELEMENT frankfurt EMPTY >
+    <!ELEMENT madrid EMPTY >
+    <!ELEMENT tokio EMPTY >
+    <!ELEMENT nyork EMPTY >
+    <!ELEMENT divisa ( nombre_divisa, tipo_de_cambio+, ciudad_procedencia )>
+    <!ATTLIST divisa precio CDATA #REQUIRED>
+    <!ATTLIST divisa estable CDATA #IMPLIED>
+    <!ELEMENT nombre_divisa (#PCDATA)>
+    <!ELEMENT tipo_de_cambio (#PCDATA)>
+    <!ELEMENT bono (pais_de_procedencia, valor_deseado, valor_minimo, valor_maximo, ciudad_procedencia)>
+    <!ATTLIST bono precio CDATA #REQUIRED>
+    <!ATTLIST bono estable CDATA #IMPLIED>
+    <!ELEMENT valor_deseado (#PCDATA)>
+    <!ELEMENT valor_minimo (#PCDATA)>
+    <!ELEMENT valor_maximo (#PCDATA)>
+    <!ELEMENT letra (tipo_de_interes, pais_emisor, ciudad_procedencia )>
+    <!ATTLIST letra precio CDATA #REQUIRED>
+    <!ELEMENT tipo_de_interes (#PCDATA)>
+    <!ELEMENT pais_emisor ( espania | alemania | eeuu | japon )>
+    <!ELEMENT espania (#PCDATA)>
+    <!ELEMENT alemania (#PCDATA)>
+    <!ELEMENT eeuu (#PCDATA)>
+    <!ELEMENT japon (#PCDATA)>
+]>
