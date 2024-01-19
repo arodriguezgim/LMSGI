@@ -1,0 +1,4 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="puertaCerrada" type="xs:boolean" default="false"/>
+    <xs:element name="ventanaAbierta" type="xs:boolean" fixed="true"/>
+</xs:schema>

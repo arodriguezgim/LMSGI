@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="fichas.xsd">
+   <ficha numero="1">
+      <nombre>Ana Sanz Tin</nombre>
+      <edad>22</edad>
+   </ficha>
+   <ficha numero="2">
+      <nombre>Iker Rubio Mol</nombre>
+      <edad>23</edad>
+   </ficha>
+</fichas>
+
+<!-- Escribir el contenido del archivo "fichas.xsd" que permita validarlo, teniendo en cuenta que se debe definir la "edad" con la restricción de que el valor que tome no pueda ser menor que 0 ni mayor que 130. Además, en vez de xs:minInclusive y xs:maxInclusive, se debe utilizar:
+
+    xs:minExclusive que sirve para especificar que el valor debe ser mayor que el indicado.
+    xs:maxExclusive que sirve para especificar que el valor debe ser menor que el indicado.
+-->
