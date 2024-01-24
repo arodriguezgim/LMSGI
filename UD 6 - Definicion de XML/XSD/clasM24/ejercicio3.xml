@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio3.xsd">
+    <vehiculo>Coche</vehiculo>
+    <vehiculo>Coche</vehiculo>
+    <vehiculo>Barco</vehiculo>
+    <vehiculo>Coche</vehiculo>
+    <vehiculo>Coche</vehiculo>
+    <vehiculo>Bicicleta</vehiculo>
+    <vehiculo>Coche</vehiculo>
+    <vehiculo>Tren</vehiculo>
+    <vehiculo>Tren</vehiculo>
+</vehiculos>
+<!-- Existen 4 posibilidades: Coche, Barco, Bicicleta, Tren-->
