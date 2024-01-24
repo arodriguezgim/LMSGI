@@ -1,0 +1,7 @@
+<xs:element name="respuesta">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ABCDE]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
