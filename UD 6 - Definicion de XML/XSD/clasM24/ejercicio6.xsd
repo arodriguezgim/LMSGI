@@ -1,7 +1,14 @@
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 <xs:element name="respuesta">
   <xs:simpleType>
     <xs:restriction base="xs:string">
-      <xs:pattern value="[ABCDE]"/>
+      <!-- <xs:pattern value="[A-E]"/>-->
+      <xs:enumeration value="A"/>
+      <xs:enumeration value="B"/>
+      <xs:enumeration value="C"/>
+      <xs:enumeration value="D"/>
+      <xs:enumeration value="E"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:element>
