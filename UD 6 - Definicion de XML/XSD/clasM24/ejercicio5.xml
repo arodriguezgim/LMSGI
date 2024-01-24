@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio5.xsd">
+   <ficha>
+      <nombre>Ana Sanz Tin</nombre>
+      <iniciales>AST</iniciales>
+      <edad>22</edad>
+      <iniciales-al-reves>TSA</iniciales-al-reves>
+   </ficha>
+   <ficha>
+      <nombre>Iker Rubio Mol</nombre>
+      <iniciales>IRM</iniciales>
+      <edad>23</edad>
+      <iniciales-al-reves>MRI</iniciales-al-reves>
+   </ficha>
+</fichas>

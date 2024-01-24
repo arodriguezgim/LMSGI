@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="fichas.xsd">
+xsi:noNamespaceSchemaLocation="ejercicio4.xsd">
    <ficha>
       <nombre>Antonio Machado Ruiz</nombre>
       <iniciales>AMR</iniciales>
@@ -8,17 +8,17 @@ xsi:noNamespaceSchemaLocation="fichas.xsd">
    </ficha>
    <ficha>
       <nombre>Mario Moreno</nombre>
-      <iniciales>MM</iniciales>
+      <iniciales>MMO</iniciales>
       <edad>23</edad>
    </ficha>
    <ficha>
-      <iniciales>ALO</iniciales>
       <nombre>Ada Lovelace</nombre>
+      <iniciales>ALO</iniciales>
       <edad>24</edad>
    </ficha>
    <ficha>
       <nombre>pablo ruiz picasso</nombre>
-      <iniciales>prp</iniciales>
+      <iniciales>PRP</iniciales>
       <edad>24</edad>
    </ficha>
 </fichas>
