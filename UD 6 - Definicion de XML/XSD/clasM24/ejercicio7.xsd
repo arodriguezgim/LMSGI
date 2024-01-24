@@ -1,0 +1,37 @@
+<!-- 
+    
+    Tanto el atributo numero como el elemento "código" utilizan la misma restricción que solamente les permite tomar un valor entero expresado con dos dígitos comprendidos entre "00" y "19".
+    El atributo letra puede tomar por valor una de las siguientes letras: "X", "Y" o "Z". La restricción debe definirse de forma que solamente pueda ser utilizada por dicho atributo.
+    Para cada ficha se tiene que indicar un número, obligatoriamente. Sin embargo, la letra es opcional.
+
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fichas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ficha" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="codigo" type="dosDigitos" />
+                            <xs:element name="nombre" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="numero" type="dosDigitos" use="required" />
+                        <xs:attribute name="letra">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[XYZ]"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="dosDigitos">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-1][0-9]" />
+            <xs:pattern value="[0-9]{8}[A-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
