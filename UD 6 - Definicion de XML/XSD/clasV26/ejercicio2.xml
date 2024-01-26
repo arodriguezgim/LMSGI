@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio2.xsd">
+   <ficha>
+      <nombre>Ana Sanz Tin</nombre>
+      <clave>G8w2</clave>
+   </ficha>
+   <ficha>
+      <nombre>Iker Rubio Mol</nombre>
+      <clave>ag32Ue7AFF</clave>
+   </ficha>
+</fichas>

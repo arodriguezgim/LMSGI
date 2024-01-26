@@ -1,0 +1,30 @@
+<xs:complexType name="tipoColorMueble">
+    <xs:simpleContent>
+      <xs:extension base="tipoMueble">
+        <xs:attribute name="color">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="blanco"/>
+              <xs:enumeration value="gris"/>
+              <xs:enumeration value="negro"/>
+              <xs:enumeration value="wengue"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="tipoMueble">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="armario"/>
+      <xs:enumeration value="mesa"/>
+      <xs:enumeration value="silla"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <!-- 
+    Escribir el contenido del archivo "ejercicio6.xsd" 
+    que permita validar el documento XML
+  -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="personas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="persona" maxOccurs="unbounded">
+          <xs:complexType mixed="true">
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="ciudad" type="xs:string"/>
+              <xs:element name="edad" type="xs:positiveInteger"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<!-- 
+    Utilizando los elementos "nombre", "ciudad" y "edad", escribir el código 
+    del documento XML ejercicio8.xml que pueda ser validado por "ejercicio8.xsd" 
+    y que almacene la siguiente información:
+
+    "Eva vive en París y tiene 25 años."
+    "Giovanni vive en Florencia y tiene 26 años."
+-->

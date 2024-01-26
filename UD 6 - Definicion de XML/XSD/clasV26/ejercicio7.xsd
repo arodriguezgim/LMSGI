@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="bingo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="bola" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="numero" type="numeroDeBola"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="numeroDeBola">
+     <xs:restriction base="xs:positiveInteger">
+        <xs:minInclusive value="1"/>
+        <xs:maxExclusive value="90"/>
+     </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+<!--  
+    Escribir el código de ejercicio7.xml que pueda ser validado por "ejercicio7.xsd" 
+    y almacene los números 17, 23 y 65.
+-->

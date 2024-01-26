@@ -1,0 +1,8 @@
+<!--
+    Definir un elemento "clave" que pueda tomar por valor exactamente diez caracteres, 
+    los cuales podrán ser letras mayúsculas o minúsculas de la "a" a la "z", o dígitos del "0" al "9". 
+    Por ejemplo, serán válidos los valores siguientes: "abcde12345", "Clave55ABC", "1A2b3c4D5f", etc.
+-->
+<!-- Solucion 1: usando facetas pattern y lenght-->
+
+<!-- Solucion 2: usando solo faceta pattern -->
