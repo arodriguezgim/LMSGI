@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="precios">
+  <xs:element name="articulos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="precio" maxOccurs="unbounded">
+        <xs:element name="articulo" maxOccurs="unbounded">
           <xs:complexType>
-            <xs:simpleContent>
-              <xs:extension base="xs:decimal">
-                <xs:attribute name="moneda" type="xs:string" />
-              </xs:extension>
-            </xs:simpleContent>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string" />
+              <xs:element name="precio">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:decimal">
+                      <xs:attribute name="moneda" type="xs:string" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>               
+              </xs:element>
+            </xs:sequence>
+            
           </xs:complexType>
         </xs:element>
       </xs:sequence>

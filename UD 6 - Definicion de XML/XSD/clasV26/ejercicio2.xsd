@@ -1,8 +1,12 @@
 <!--
-    Escribir el contenido del archivo "ejercicio2.xsd" que permita validarlo, teniendo en cuenta que el elemento "clave" 
-    debe poder tomar por valor un mínimo de cuatro caracteres y un máximo de diez. 
-    Dichos caracteres pueden ser indistintamente letras mayúsculas o minúsculas de la "a" a la "z", 
-    o dígitos del "0" al "9". La restricción solamente podrá aplicarse al elemento "clave".
+    Escribir el contenido del archivo "ejercicio2.xsd" que permita validarlo, 
+    teniendo en cuenta que el elemento "clave" 
+    debe poder tomar por valor un mínimo de cuatro caracteres 
+    y un máximo de diez. 
+    Dichos caracteres pueden ser indistintamente letras mayúsculas 
+    o minúsculas de la "a" a la "z", 
+    o dígitos del "0" al "9". 
+    La restricción solamente podrá aplicarse al elemento "clave".
 
 Para ello, se debe utilizar xs:pattern y también:
 
@@ -10,3 +14,28 @@ Para ello, se debe utilizar xs:pattern y también:
     xs:maxLength que permite especificar la longitud máxima.
 
 -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fichas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ficha" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="clave" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z0-9]*" />
+                                        <xs:minLength value="4" />
+                                        <xs:maxLength value="10" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
