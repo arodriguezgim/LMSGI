@@ -79,3 +79,12 @@ Esto son los mapas en JAVA:
 ![ Logo de VS Code ](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png "Esto es el logo de VS Code")
 
 ![Logo de Mercedes](./images/logo_mercedes.png "Logo de Merceds")
+
+<!-- Listas de Tareas -->
+- [x] Crear el proyecto
+- [x] Crear Primera pagina
+- [ ] Crear los enlaces
+- [ ] \(Optional) Hacer la APP bonita
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
