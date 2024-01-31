@@ -77,3 +77,5 @@ Esto son los mapas en JAVA:
 
 <!-- 11 Imagenes -->
 ![ Logo de VS Code ](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png "Esto es el logo de VS Code")
+
+![Logo de Mercedes](./images/logo_mercedes.png "Logo de Merceds")
