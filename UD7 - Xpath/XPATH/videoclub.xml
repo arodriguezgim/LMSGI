@@ -1,0 +1,157 @@
+<videoclub>
+  <pelicula id="1">
+    <titulo>El Padrino</titulo>
+    <director>Francis Ford Coppola</director>
+    <anio>1972</anio>
+    <genero>Drama</genero>
+    <alquiler>
+      <fecha_ini>2024-01-15</fecha_ini>
+      <fecha_fin>2024-01-22</fecha_fin>
+    </alquiler>
+  </pelicula>
+
+  <pelicula id="2">
+    <titulo>Titanic</titulo>
+    <director>James Cameron</director>
+    <anio>1997</anio>
+    <genero>Romance</genero>
+    <alquiler>
+      <fecha_ini>2024-02-10</fecha_ini>
+      <fecha_fin>2024-02-17</fecha_fin>
+    </alquiler>
+  </pelicula>
+
+  <pelicula id="3">
+    <titulo>Matrix</titulo>
+    <director>Lana Wachowski, Lilly Wachowski</director>
+    <anio>1999</anio>
+    <genero>Ciencia ficción</genero>
+    <alquiler>
+      <fecha_ini>2024-03-05</fecha_ini>
+      <fecha_fin>2024-03-12</fecha_fin>
+    </alquiler>
+  </pelicula>
+
+  <pelicula id="4">
+    <titulo>Harry Potter y la piedra filosofal</titulo>
+    <director>Chris Columbus</director>
+    <anio>2001</anio>
+    <genero>Fantasía</genero>
+    <alquiler>
+      <fecha_ini>2024-04-20</fecha_ini>
+      <fecha_fin>2024-04-27</fecha_fin>
+    </alquiler>
+  </pelicula>
+
+  <pelicula id="5">
+    <titulo>La La Land</titulo>
+    <director>Damien Chazelle</director>
+    <anio>2016</anio>
+    <genero>Musical</genero>
+    <alquiler>
+      <fecha_ini>2024-05-15</fecha_ini>
+      <fecha_fin>2024-05-22</fecha_fin>
+    </alquiler>
+  </pelicula>
+  <socio codigo="1">
+    <nombre>Juan Pérez</nombre>
+    <telefono>123456789</telefono>
+    
+  </socio>
+
+  <socio codigo="2">
+    <nombre>María García</nombre>
+    <telefono>987654321</telefono>
+
+  </socio>
+  
+    <socio codigo="3">
+    <nombre>Luis Rodríguez</nombre>
+    <telefono>111222333</telefono>
+  </socio>
+
+  <socio codigo="4">
+    <nombre>Ana Martínez</nombre>
+    <telefono>444555666</telefono>
+  </socio>
+
+  <socio codigo="5">
+    <nombre>Javier Sánchez</nombre>
+    <telefono>777888999</telefono>
+  </socio>
+
+  <socio codigo="6">
+    <nombre>Marta López</nombre>
+    <telefono>123789456</telefono>
+  </socio>
+
+  <socio codigo="7">
+    <nombre>Carlos Ruiz</nombre>
+    <telefono>987654321</telefono>
+  </socio>
+
+  <socio codigo="8">
+    <nombre>Sofía Herrera</nombre>
+    <telefono>456123789</telefono>
+  </socio>
+
+  <socio codigo="9">
+    <nombre>Pablo González</nombre>
+    <telefono>333666999</telefono>
+  </socio>
+
+  <socio codigo="10">
+    <nombre>Isabel Castro</nombre>
+    <telefono>555222111</telefono>
+  </socio>
+
+  <socio codigo="11">
+    <nombre>Miguel Fernández</nombre>
+    <telefono>888777666</telefono>
+  </socio>
+
+  <socio codigo="12">
+    <nombre>Elena Díaz</nombre>
+    <telefono>999444333</telefono>
+  </socio>
+
+  <socio codigo="13">
+    <nombre>David Ramos</nombre>
+    <telefono>111999444</telefono>
+  </socio>
+
+  <socio codigo="14">
+    <nombre>Adriana Vargas</nombre>
+    <telefono>777333888</telefono>
+  </socio>
+
+  <socio codigo="15">
+    <nombre>José Navarro</nombre>
+    <telefono>666888555</telefono>
+  </socio>
+
+  <socio codigo="16">
+    <nombre>Alicia Pérez</nombre>
+    <telefono>444111222</telefono>
+  </socio>
+
+  <socio codigo="17">
+    <nombre>Raul Mendoza</nombre>
+    <telefono>555666777</telefono>
+  </socio>
+
+  <socio codigo="18">
+    <nombre>Carmen López</nombre>
+    <telefono>333444555</telefono>
+  </socio>
+
+  <socio codigo="19">
+    <nombre>Fernando Torres</nombre>
+    <telefono>222555888</telefono>
+  </socio>
+
+  <socio codigo="20">
+    <nombre>Laura Soto</nombre>
+    <telefono>888222111</telefono>
+  </socio>
+</videoclub>
