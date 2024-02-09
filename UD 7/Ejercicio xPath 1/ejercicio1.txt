@@ -1,0 +1,17 @@
+Construye las expresiones XPath que permitan obtener los siguientes datos:
+
+    1. Extraer todos los elementos <producto>.
+    2. Extraer todos los elementos <talla> del producto con nombre Camiseta.
+    3. Precio del producto con nombre Zapatos.
+    4. Todos los elementos <nombre> de los productos cuyo precio es mayor o igual a 15.
+    5. Todos los elementos <talla> de todos los productos.
+    6. El nombre del producto con el precio más alto.
+    7. El precio promedio de todos los productos.
+    8. Todos los nombres de los productos cuyo nombre comienza por P.
+    9. Todos los elementos <nombre> de los productos cuya descripción contiene la palabra deportiva.
+    10. Todos los elementos <talla> de los productos con precio menor a 20.
+    11. Todos los elementos <producto> que tengan el atributo categoria igual a ropa.
+    12. El precio del producto con nombre Gorra en dólares (USD).
+    13. El nombre de los productos cuyo precio esté en euros (EUR).
+    14. Todas las tallas de los productos con precio mayor a 20 dólares (USD).
+    15. El nombre y la descripción de los productos con precio en dólares (USD).
