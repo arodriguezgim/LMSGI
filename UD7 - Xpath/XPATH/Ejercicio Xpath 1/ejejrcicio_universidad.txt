@@ -1,0 +1,29 @@
+ Obtén la siguiente información:
+
+    Nombre de la Universidad.
+    País de la Universidad.
+    Nombres de las Carreras.
+    Años de plan de estudio de las carreras.
+    Nombres de todos los alumnos.
+    Identificadores de todas las carreras.
+    Datos de la carrera cuyo id es c01.
+    Centro en que se estudia de la carrera cuyo id es c02.
+    Nombre de las carreras que tengan subdirector.
+    Nombre de los alumnos que estén haciendo proyecto.
+    Códigos de las carreras en las que hay algún alumno matriculado.
+    Apellidos y Nombre de los alumnos con beca.
+    Nombre de las asignaturas de la titulación c04.
+    Nombre de las asignaturas de segundo trimestre.
+    Nombre de las asignaturas que no tienen 4 créditos teóricos.
+    Código de la carrera que estudia el último alumno.
+    Código de las asignaturas que estudian mujeres.
+    Nombre de los alumnos que matriculados en la asignatura a02.
+    Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura.
+    Apellidos de todos los hombres.
+    Nombre de la carrera que estudia Víctor Manuel.
+    Nombre de las asignaturas que estudia Luisa.
+    Primer apellido de los alumnos matriculados en Ingeniería del Software.
+    Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología de los Alimentos.
+    Nombre de los alumnos matriculados en carreras que no tienen subdirector.
+    Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática .
+    Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002.
