@@ -1,0 +1,11 @@
+Construye las expresiones XPath que permitan obtener los siguientes datos:
+
+   1 Extraer todos los elementos <peso> (etiqueta incluida).
+   2 Extraer las cantidades de todos los elementos <peso> (sin la etiqueta <peso>).
+   3 Extraer el peso del último elemento.
+   4 Extraer las distintas unidades en las que se han almacenado los pesos.
+   5 Extraer el penúltimo codigo.
+   6 Extraer el peso del elemento cuyo codigo sea AAA-111.
+   7 Extraer el nombre de los productos que hayan puesto el peso en gramos.
+   8 Extraer el codigo de los productos cuyo nombre sea Monitor.
+   9 Extraer el código de los productos que pesen más de un cuarto de kilo.

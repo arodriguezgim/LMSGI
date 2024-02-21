@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventario>
+    <producto codigo="AAA-111">
+        <nombre>Teclado</nombre>
+        <peso unidad="g">480</peso>
+    </producto>
+    <producto codigo="ACD-981">
+        <nombre>Monitor</nombre>
+        <peso unidad="kg">1.8</peso>
+    </producto>
+    <producto codigo="DEZ-138">
+        <nombre>Raton</nombre>
+        <peso unidad="g">50</peso>
+    </producto>
+</inventario>
