@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Aquí asociamos el documento XML a nuetsro documento XSLT-->
+<?xml-stylesheet href="cestacompra.xsl" type="text/xsl"?>
+<cesta>
+    <producto idproducto = "057">
+        <nombre>Manzana Golden</nombre>
+        <origen>Ademuz</origen>
+        <cantidad>20</cantidad>
+        <coste>14,5</coste>
+    </producto>
+    <producto idproducto = "230">
+        <nombre>Pera</nombre>
+        <origen>Torrebaja</origen>
+        <cantidad>32</cantidad>
+        <coste>12,8</coste>
+    </producto>
+    <producto idproducto = "218">
+        <nombre>Mango</nombre>
+        <origen>República Dominicana</origen>
+        <cantidad>10</cantidad>
+        <coste>18,5</coste>
+    </producto>
+</cesta>
