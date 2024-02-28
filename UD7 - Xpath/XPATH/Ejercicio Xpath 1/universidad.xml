@@ -104,7 +104,7 @@
         <alumno id="e01">
             <apellido1>Rivas</apellido1>
             <apellido2>Santos</apellido2>
-            <nombre>Vi­ctor Manuel</nombre>
+            <nombre>V­ctor Manuel</nombre>
             <sexo>Hombre</sexo>
             <estudios>
                 <carrera codigo="c01" />
