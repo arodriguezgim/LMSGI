@@ -8,7 +8,7 @@
     El atributo mode es opcional y permite a los elementos ser procesados para producir diferentes resultados.
     priority es opcional e indica la prioridad que tendrá el template
     -->
-    <xsl:template match="/*" >
+    <xsl:template match="/" >
         <!-- Aquí creamos el documento HTML -->
         <html lang="es">
             <head>
