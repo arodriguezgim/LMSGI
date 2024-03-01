@@ -21,10 +21,10 @@
                 <main>
                     <h2>Listado de Participantes</h2>
                     <ol class="participantes">
+                        <xsl:for-each select="//participante">      
                         <!-- Lista de participantes-->
-                        <li>Apellidos, nombre. (código) - X puntos</li>
-                        <li>Apellidos, nombre. (código) - X puntos</li>
-                        <li>Apellidos, nombre. (código) - X puntos</li>
+                            <li> <xsl:value-of select="apellidos"/> <xsl:text> , </xsl:text> <xsl:value-of select="nombre"/> <xsl:text>. (</xsl:text>código) - X puntos</li>
+                        </xsl:for-each>
                     </ol>
 
                     <h2>5 - Mejores participantes con más de 20 puntos</h2>
