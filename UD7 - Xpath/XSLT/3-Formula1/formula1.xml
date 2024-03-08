@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="formula1.xsl" type="text/xsl"?>
+<!DOCTYPE formula1>
+<formula1>
+    <equipo nombre="Mercedes">
+        <coche modelo="W13" piloto="Lewis Hamilton" puntos="500"/>
+        <coche modelo="W13" piloto="Valtteri Bottas" puntos="450"/>
+    </equipo>
+    <equipo nombre="Red Bull Racing">
+        <coche modelo="RB18" piloto="Max Verstappen" puntos="480"/>
+        <coche modelo="RB18" piloto="Sergio Perez" puntos="430"/>
+    </equipo>
+    <equipo nombre="Ferrari">
+        <coche modelo="SF22" piloto="Charles Leclerc" puntos="320"/>
+        <coche modelo="SF22" piloto="Carlos Sainz" puntos="280"/>
+    </equipo>
+    <equipo nombre="McLaren">
+        <coche modelo="MCL37" piloto="Lando Norris" puntos="360"/>
+        <coche modelo="MCL37" piloto="Daniel Ricciardo" puntos="310"/>
+    </equipo>
+    <equipo nombre="Alpine">
+        <coche modelo="A522" piloto="Fernando Alonso" puntos="250"/>
+        <coche modelo="A522" piloto="Esteban Ocon" puntos="200"/>
+    </equipo>
+    <equipo nombre="AlphaTauri">
+        <coche modelo="AT03" piloto="Pierre Gasly" puntos="180"/>
+        <coche modelo="AT03" piloto="Yuki Tsunoda" puntos="150"/>
+    </equipo>
+    <equipo nombre="Aston Martin">
+        <coche modelo="AMR22" piloto="Sebastian Vettel" puntos="220"/>
+        <coche modelo="AMR22" piloto="Lance Stroll" puntos="180"/>
+    </equipo>
+    <equipo nombre="Williams">
+        <coche modelo="FW44" piloto="George Russell" puntos="120"/>
+        <coche modelo="FW44" piloto="Nicholas Latifi" puntos="80"/>
+    </equipo>
+    <equipo nombre="Alfa Romeo">
+        <coche modelo="C42" piloto="Kimi Raikkonen" puntos="100"/>
+        <coche modelo="C42" piloto="Antonio Giovinazzi" puntos="70"/>
+    </equipo>
+    <equipo nombre="Haas">
+        <coche modelo="VF-22" piloto="Mick Schumacher" puntos="60"/>
+        <coche modelo="VF-22" piloto="Nikita Mazepin" puntos="30"/>
+    </equipo>
+    <!-- Agrega más equipos y coches aquí -->
+</formula1>
+
