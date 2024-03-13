@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <precios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="precios.xsd">
+xsi:noNamespaceSchemaLocation="ejercicio5.xsd">
    <precio>8</precio>
    <precio>2.6</precio>
    <precio>4.95</precio>
    <precio>187</precio> 
 </precios>
 
-<!-- Escribir el contenido del archivo "precios.xsd" que permita validarlo, teniendo en cuenta que el elemento "precio" puede tomar por valor un número que contenga tres dígitos como máximo y, de ellos, solamente dos pueden ser decimales. Para ello, escribir una restricción que no podrá ser utilizada por otros elementos y, por otra parte, haga uso de:
+<!-- Escribir el contenido del archivo "precios.xsd" que permita validarlo, 
+    teniendo en cuenta que el elemento "precio" puede tomar por valor un número que contenga tres dígitos como máximo y, 
+    de ellos, solamente dos pueden ser decimales. 
+    Para ello, escribir una restricción que no podrá ser utilizada por otros elementos y, 
+    por otra parte, haga uso de:
 
-    xs:totalDigits que sirve para especificar el número máximo de dígitos que puede tener un número, incluyendo a los decimales.
+    xs:totalDigits que sirve para especificar el número máximo de dígitos que puede tener un número, 
+    incluyendo a los decimales.
     xs:fractionDigits que sirve para especificar el número máximo de decimales que puede tener un número.
 -->
