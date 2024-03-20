@@ -26,16 +26,25 @@
                             <th>Trabajo</th>
                             <th>Sueldo</th>
                         </tr>
-                        <tr>
-                            <!-- Nombre del primer empleado-->
+                        <!-- Recorro todos los empleados-->
+                        <xsl:for-each select="empresa/departamento/empleado">                
+                        <tr> 
                             <td>
-                                <xsl:value-of select="empresa/departamento/empleado[1]/nombre"/>
+                                <xsl:value-of select="nombre"/>
                             </td>
                             <td>
-                                <xsl:value-of select="empresa/departamento/empleado[1]/trabajo"/>
+                                <xsl:value-of select="trabajo"/>
                             </td>
                             <td class="number">
-                                <xsl:value-of select="empresa/departamento/empleado[1]/sueldo"/>
+                                <xsl:value-of select="sueldo"/>
+                            </td>
+                        </tr>
+                        </xsl:for-each>
+                        <!--Fin Recorro-->
+                        <tr>
+                            <td colspan="2">TOTAL DE SUELDOS</td>
+                            <td class="number">
+                                <xsl:value-of select="format-number(sum(empresa/departamento/empleado/sueldo), '#.00')"/>
                             </td>
                         </tr>
                     </tbody>

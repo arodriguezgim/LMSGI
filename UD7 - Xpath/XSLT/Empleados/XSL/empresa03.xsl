@@ -26,18 +26,25 @@
                             <th>Trabajo</th>
                             <th>Sueldo</th>
                         </tr>
-                        <tr>
-                            <!-- Nombre del primer empleado-->
-                            <td>
-                                <xsl:value-of select="empresa/departamento/empleado[1]/nombre"/>
-                            </td>
-                            <td>
-                                <xsl:value-of select="empresa/departamento/empleado[1]/trabajo"/>
-                            </td>
-                            <td class="number">
-                                <xsl:value-of select="empresa/departamento/empleado[1]/sueldo"/>
-                            </td>
-                        </tr>
+                        <!-- Recorro todos los empleados-->
+                        <xsl:for-each select="empresa/departamento/empleado[]"> 
+                                <!-- Verifico si el trabajo es Programador -->    
+                                <xsl:if test='trabajo = "Programador"'>          
+                                    <tr> 
+                                        <td>
+                                            <xsl:value-of select="nombre"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="trabajo"/>
+                                        </td>
+                                        <td class="number">
+                                            <xsl:value-of select="sueldo"/>
+                                        </td>
+                                    </tr>
+                                </xsl:if> 
+                        </xsl:for-each>
+                        <!--Fin Recorro-->
+                        
                     </tbody>
                 </table>
                 
