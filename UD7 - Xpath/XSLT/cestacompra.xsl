@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                version="1.0">
-<!-- En el template colocamos las reglas que se aplican a los nodos que se llegan a encontrar.
+    version="3.0">
+    <!-- En el template colocamos las reglas que se aplican a los nodos que se llegan a encontrar.
     match es usado para asociar el template con un elemento xml  
     Si usamos / significará que es todo el documento.
     El atributo name es opcional y representa al nombre del template.
-    El atributo mode es opcional y permite a los elementos ser procesados para producir diferentes resultados.
+    El atributo mode es opcional y permite a los elementos ser procesados para producir diferentes
+    resultados.
     priority es opcional e indica la prioridad que tendrá el template
     -->
-    <xsl:template match="/*" >
+    <xsl:template match="/*">
         <!-- Aquí creamos el documento HTML -->
         <html lang="es">
             <head>
@@ -24,7 +25,7 @@
                         <th>Origen</th>
                         <th>Cantidad (Kg)</th>
                         <th>Precio Total</th>
-                    </tr> 
+                    </tr>
 
                     <!-- Tenemos un iterador for-each que recorrerá Cantidad
                     elemento producto dentro de Cesta
@@ -32,23 +33,23 @@
                     <xsl:for-each select="cesta/producto">
                         <tr>
                             <td>
-                            <!-- Obtenemos los valores del nodo seleccionado y los colocamos en su casilla.
+                                <!-- Obtenemos los valores del nodo seleccionado y los colocamos en
+                                su casilla.
                             En este ejemplo los colocamos dentro de td
                             Con select indicamos cual es el nodo o atributo a obtener -->
-                                <xsl:value-of select="@idproducto"/>
+                                <xsl:value-of select="@idproducto" />
                             </td>
                             <td>
-                                <xsl:value-of select="nombre"/>
+                                <xsl:value-of select="nombre" />
                             </td>
                             <td>
-                                <xsl:value-of select="origen"/>
+                                <xsl:value-of select="origen" />
                             </td>
                             <td>
-                                <xsl:value-of select="cantidad"/>
+                                <xsl:value-of select="cantidad" />
                             </td>
                             <td>
-                                <xsl:value-of select="coste"/> €
-                            </td>
+                                <xsl:value-of select="coste" /> € </td>
                         </tr>
                     </xsl:for-each>
                 </table>
@@ -56,7 +57,5 @@
         </html>
     </xsl:template>
 
-    
 
 </xsl:stylesheet>
-
