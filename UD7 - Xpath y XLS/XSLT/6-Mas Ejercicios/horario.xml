@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet href="ejercicio5.xsl" type="text/xsl"?>
+<!DOCTYPE horario>
+<horario>
+    <dia>
+        <numdia>1</numdia>
+        <tarea prioridad="media">
+            <hora-ini>12</hora-ini>
+            <hora-fin>14</hora-fin>
+            <nombre>Tutorías</nombre>
+        </tarea>
+    </dia>
+    <dia>
+        <numdia>2</numdia>
+        <tarea prioridad="alta">
+            <hora-ini>12</hora-ini>
+            <hora-fin>14</hora-fin>
+            <nombre>Autómatas</nombre>
+        </tarea>
+    </dia>
+    <dia>
+        <numdia>4</numdia>
+        <tarea prioridad="alta">
+            <hora-ini>9</hora-ini>
+            <hora-fin>11</hora-fin>
+            <nombre>Procesadores de lenguajes</nombre>
+        </tarea>
+        <tarea prioridad="alta">
+            <hora-ini>16</hora-ini>
+            <hora-fin>17</hora-fin>
+            <nombre>EDI</nombre>
+        </tarea>
+    </dia>
+    <dia>
+        <numdia>3</numdia>
+        <tarea prioridad="alta">
+            <hora-ini>9</hora-ini>
+            <hora-fin>11</hora-fin>
+            <nombre>Procesadores de lenguajes</nombre>
+        </tarea>
+    </dia>
+    <dia>
+        <numdia>5</numdia>
+        <tarea prioridad="baja">
+            <hora-ini>17</hora-ini>
+
+            <hora-fin>18</hora-fin>
+            <nombre>Ver la tele</nombre>
+        </tarea>
+    </dia>
+</horario>
