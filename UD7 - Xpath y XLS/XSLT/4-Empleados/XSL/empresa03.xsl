@@ -27,7 +27,7 @@
                             <th>Sueldo</th>
                         </tr>
                         <!-- Recorro todos los empleados-->
-                        <xsl:for-each select="empresa/departamento/empleado[]"> 
+                        <xsl:for-each select="empresa/departamento/empleado"> 
                                 <!-- Verifico si el trabajo es Programador -->    
                                 <xsl:if test='trabajo = "Programador"'>          
                                     <tr> 
