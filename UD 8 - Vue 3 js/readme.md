@@ -231,6 +231,60 @@ Incorrecto:
 </template>
 ```
 
+```vue
+<script setup>
+    const name = "Vue 3";
+    const arrayFrutas = [
+        {
+            name: "Manzana",
+            price: "$1.00",
+            description: "Una manzana",
+        },
+        {
+            name: "Pera",
+            price: "$2.00",
+            description: "Una pera",
+        },
+        {
+            name: "Naranja",
+            price: "$3.00",
+            description: "Una naranja",
+        },
+    ];
+</script>
+
+<template>
+    <h1>Hola {{ name }}!</h1>
+    <ul>
+        <li v-for="fruta in arrayFrutas" :key="name">
+            {{ fruta.name }} - {{ fruta.price }} - {{ fruta.description }}
+        </li>
+    </ul>
+</template>
+```
+
+### v-for con Objetos
+```vue
+<script setup>
+    const name = "Vue 3";
+
+    const fruta = {
+        name: "Naranja",
+        price: "$3.00",
+        description: "Una naranja",
+    };
+</script>
+
+<template>
+    <h1>Hola {{ name }}!</h1>
+    <ul>
+        <li v-for="(value, propiedad) in fruta">
+            {{ propiedad }} : {{ value }}
+        </li>
+    </ul>
+</template>
+```
+
 ## 5 - Ejercicio Práctico
 
 Vamos a recorrer el arrayFrutas usando como key su nombre
