@@ -1,21 +1,18 @@
 <script setup>
     const nombre = "Vue 3";
-    const objetoFruta = 
-        {
-            name: "Manzana",
-            price: "$1.00",
-            description: "Una manzana",
-        };
+
+    //método hacerClick
+    const hacerClick = ( mensaje ) => {
+      console.log( mensaje );
+    }
+
 </script>
 
 <template>
   <h1>Hola {{ nombre }}</h1>
-  <ul>
-    <!-- El :key ha de ser algo que no se repita en el elemento-->
-      <li v-for=" (valor, propiedad ) in objetoFruta"> 
-        {{ propiedad }} : {{ valor }}
-      </li>
-  </ul>
+  <button v-on:click.left="hacerClick('Click desde el Botón 1')">Boton 1</button>
+  <button @click.middle="hacerClick('Click desde el botón 2')">Botón 2</button>
+  <button @click.right="hacerClick('Click desde el botón 2')">Botón 3</button>
 
 </template>
 
