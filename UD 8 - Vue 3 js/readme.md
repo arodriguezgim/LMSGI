@@ -213,6 +213,7 @@ Incorrecto:
 ### v-for
 
 - La directiva v-for se usa para iterar sobre una lista de elementos.
+- De manera opcional podemos introducir un 2º argumento (index, i, value..) que nos devuelve la posición que se está recorriendo en el momento.
 - Para darle a Vue una pista para que pueda rastrear la identidad de cada nodo y, por lo tanto, reutilizar y reordenar los elementos existentes, debe proporcionar un atributo key único para cada elemento.
 
 ```vue
@@ -415,3 +416,99 @@ Doc Modificadores:
     Click middle
 </button>
 ```
+
+## 7 - Programación Reactiva - Variables
+
+Siguiendo el ejemplo:
+ ```vue
+<script setup>
+const name = "Vue 3";
+
+let counter = 0;
+
+const increment = () => {
+    counter++;
+    // efectivamente aumentar
+    console.log(counter);
+};
+</script>
+
+<template>
+    <h1>Hola {{ name }}!</h1>
+    <h2>{{ counter }}</h2>
+    <button @click="increment">Click incremet</button>
+</template>
+```
+
+### Descubrimiento de ref()
+
+- **ref** es una forma de trabajar con la reactividad de Vue 3.
+- **ref:** Es una referencia reactiva, en nuestro ejemplo necesitamos un entero que sea "rastreable", por ende utilizaremos ref, una forma de trabajar con la reactividad de Vue 3.
+- **ref** toma el argumento y lo devuelve envuelto dentro de un objeto con una value propiedad, que luego puede usarse para acceder o mutar el valor de la variable reactiva.
+- DOM: Cuando muta el estado reactivo, **el DOM se actualiza automaticamente.**
+- En el template no es necesario acceder al **.value,** ya que el valor de la variable reactiva se puede acceder directamente.
+
+### Ejercicio Práctico:
+
+- Agrega un botón para disminuir el contador.
+- Agrega un botón para resetear el contador.
+- Pinta el contador en rojo cuando el valor sea menor a cero.
+- Pinta el contador en verde cuando el valor sea mayor a cero.
+
+```vue
+<script setup>
+import { ref } from "vue";
+
+const name = "Vue 3";
+
+// Crea tus métodos aquí
+</script>
+
+<template>
+    <h1>Hola {{ name }}!</h1>
+    // Realiza el ejercicio aqui
+</template>
+
+<style>
+
+ crea aqui las clases
+</style>
+```
+
+## 8 - Propiedades Computadas
+
+- Las propiedades computadas nos sirven para generar calculos en nuestros componentes, por ejemplo no se recomienda colocar demasiada lógica en nuestras plantillas HTML, ya que dificulta la interpretación de nuestros componentes.
+- Por eso, para la lógica compleja que incluye datos reactivos, se recomienda utilizar una propiedad calculada
+
+```vue
+<script setup>
+import { ref, computed } from "vue";
+
+const name = "Vue 3";
+
+const counter = ref(0);
+
+const increment = () => {
+    counter.value++;
+};
+
+const decrement = () => {
+    counter.value--;
+};
+
+const reset = () => {
+    counter.value = 0;
+};
+
+const classCounter = computed(() => {
+    if (counter.value === 0) {
+        return "zero";
+    }
+    return counter.value > 0 ? "positive" : "negative";
+});
+
+</script>
+
+```
+
+falta código
