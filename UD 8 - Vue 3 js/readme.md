@@ -415,7 +415,7 @@ Doc Modificadores:
 <button @click.middle="handleClick('Mensaje desde botón')">
     Click middle
 </button>
-```
+´´´
 
 ## 7 - Programación Reactiva - Variables
 
