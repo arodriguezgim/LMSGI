@@ -408,14 +408,14 @@ Parámetros:
 ```
 
 Doc Modificadores:
-´´´vue
+```vue
 <button @click.right.prevent="handleClick('Mensaje desde botón')">
     Click right
 </button>
 <button @click.middle="handleClick('Mensaje desde botón')">
     Click middle
 </button>
-´´´
+```
 
 ## 7 - Programación Reactiva - Variables
 
@@ -455,7 +455,7 @@ const increment = () => {
 - Pinta el contador en rojo cuando el valor sea menor a cero.
 - Pinta el contador en verde cuando el valor sea mayor a cero.
 
-```vue
+ ```vue
 <script setup>
 import { ref } from "vue";
 
@@ -486,19 +486,7 @@ import { ref, computed } from "vue";
 
 const name = "Vue 3";
 
-const counter = ref(0);
-
-const increment = () => {
-    counter.value++;
-};
-
-const decrement = () => {
-    counter.value--;
-};
-
-const reset = () => {
-    counter.value = 0;
-};
+Texto anterior aqui
 
 const classCounter = computed(() => {
     if (counter.value === 0) {
@@ -508,7 +496,71 @@ const classCounter = computed(() => {
 });
 
 </script>
+```
+
+### Consejos
+- En lugar de una propiedad calculada, podemos definir la misma función como un método. Para el resultado final, los dos enfoques son exactamente iguales. Sin embargo, **la diferencia es que las propiedades calculadas se almacenan en caché en función de sus dependencias reactivas.**
+- Una propiedad calculada solo se volverá a evaluar cuando algunas de sus dependencias reactivas hayan cambiado.
+
+```vue
+// método
+const classCounter = () => {
+    if (counter.value === 0) {
+        return "zero";
+    }
+    return counter.value > 0 ? "positive" : "negative";
+};
 
 ```
 
-falta código
+Es necesario invocar al método:
+```vue
+<h2 :class="classCounter()">
+    {{ counter }}
+</h2>
+```
+
+## 9 - Bootstrap 5 en Vue
+
+Podemos añadir Bootstrap a nuestro proyecto en Vue demanera muy sencilla.
+- CDN: revísalo en la página oficial: [getbootstrap](https://getbootstrap.com/)
+- Puedes agregarlo en el index.HTML
+```html
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
+```
+
+## 10 - Práctica Final con Vue 3: Nuestro primer proyecto
+
+- Agrega un array y su respectivo método y botón add para almacenar los números favoritos del usuario.
+- Pinta ese array utilizando v-for.
+- Utiliza :disabled en el botón add, para que solo se pueda presionar si el array no contiene números repetidos. (utiliza una propiedad computada).
+
+**:disabled** si es true el botón se bloquea:
+```html
+<button @click="add" :disabled="true">Add</button>
+```
+
+### Solución Práctica 10:
+
+(Pendiente de subir)
+
+## 11 - Hacer un Deploy de nuestro proyecto
