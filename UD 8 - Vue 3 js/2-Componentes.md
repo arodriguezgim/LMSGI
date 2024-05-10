@@ -212,3 +212,179 @@ const posts = ref([
     </div>
 </template>
 ```
+
+## Emit (escuchar eventos)
+
+```vue
+<script setup>
+import { ref } from "vue";
+
+import BlogPost from "./components/BlogPost.vue";
+
+const posts = ref([
+    { id: 1, title: "Post 01", body: "Descrión del post 01" },
+    { id: 2, title: "Post 02", body: "Descrión del post 02" },
+    { id: 3, title: "Post 03" },
+]);
+
+const miFavorito = ref("");
+
+const fijarFavorito = (title) => {
+    miFavorito.value = title;
+};
+</script>
+
+<template>
+    <div class="container">
+        <h1>{{ miFavorito || "Sin favorito" }}</h1>
+
+        <div>
+            <BlogPost
+                v-for="post in posts"
+                :key="post.title"
+                :title="post.title"
+                :id="post.id"
+                :body="post.body"
+                class="mb-2"
+                @fijarFavorito="fijarFavorito"
+            />
+        </div>
+    </div>
+</template>
+```
+BlogPost.vue
+```vue
+<script setup>
+defineProps({
+    title: String,
+    id: Number,
+    body: {
+        type: String,
+        default: "Sin descripción",
+    },
+});
+</script>
+
+<template>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ title }}</h5>
+            <p>{{ body }}</p>
+            <button
+                class="btn btn-sm btn-outline-primary"
+                @click="$emit('fijarFavorito', title)"
+            >
+                Mi Favorito
+            </button>
+        </div>
+    </div>
+</template>
+```
+
+## defineEmits
+
+```vue
+<script setup>
+defineProps({
+    title: String,
+    id: Number,
+    body: {
+        type: String,
+        default: "Sin descripción",
+    },
+});
+
+const emit = defineEmits(["fijarFavorito"]);
+</script>
+
+<template>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ title }}</h5>
+            <p>{{ body }}</p>
+            <button
+                class="btn btn-sm btn-outline-primary"
+                @click="emit('fijarFavorito', title)"
+            >
+                Mi Favorito
+            </button>
+        </div>
+    </div>
+</template>
+```
+
+## Function Props
+
+- Parece tentador pero si analizamos el flujo de trabajo... aquí le estamos pasando a cada uno de nuestros componentes tooooooda la función, por ende cada posts tendrá este método en su script setup.
+- En cambio, cuando activamos un evento (defineEmits), no es que el método exista en el componente, sino que lo estamos llamando del componente principal, donde ahí solo existe un evento en cuestión.
+- Por ende esto se considera un antipatrón en Vue.
+```html
+<BlogPost
+    v-for="post in posts"
+    :key="post.title"
+    :title="post.title"
+    :id="post.id"
+    :body="post.body"
+    class="mb-2"
+    :fijarFavorito="fijarFavorito"
+/>
+```
+```vue
+<script setup>
+defineProps({
+    title: String,
+    id: Number,
+    body: {
+        type: String,
+        default: "Sin descripción",
+    },
+    fijarFavorito: Function,
+});
+
+// defineProps(["title", "id", "body", "fijarFavorito"]);
+</script>
+
+<template>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ title }}</h5>
+            <p>{{ body }}</p>
+            <button
+                class="btn btn-sm btn-outline-primary"
+                @click="fijarFavorito(title)"
+            >
+                Mi Favorito
+            </button>
+        </div>
+    </div>
+</template>
+```
+
+## Práctica Final Bloque 2
+
+[jsonplaceholder](https://jsonplaceholder.typicode.com/)
+
+```js
+const posts = ref([]);
+
+fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((res) => res.json())
+    .then((data) => (posts.value = data))
+```
+
+PaginationPosts.vue
+
+```vue
+<script setup></script>
+
+<template>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-outline-primary">Previus</button>
+        <button type="button" class="btn btn-outline-primary">Next</button>
+    </div>
+</template>
+```
+
+## Solución Práctica
+
+* próximamente
